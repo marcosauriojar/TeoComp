@@ -1,5 +1,7 @@
 def q0(cadena, indice):
-    if cadena[indice] == "a":
+    if len(cadena) == 0:
+        print("Cadena Invalida")
+    elif cadena[indice] == "a":
         q2(cadena, indice)
     elif cadena[indice] == "b":
         q1(cadena, indice)
@@ -21,7 +23,7 @@ def q2(cadena,indice):
         print("Cadena válida")
     elif indice < tam-1:
         indice = indice +1
-        print(cadena[indice] + " " + str(indice))
+        #print(cadena[indice] + " " + str(indice))
         if cadena[indice] == "b":
             #indice = indice + 1
             q3(cadena, indice)
